@@ -58,13 +58,13 @@ body {
 }
 
 .hero-section {
-    padding: 65px 30px;
+    padding: 65px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #fff;
     background-color: #111111;
     border-radius: 20px;
-    margin: 65px 100px;
+    margin: 65px 130px;
 
 }
 
@@ -173,8 +173,8 @@ body {
   text-align: center;
   background-color: #111111;
   border-radius: 20px;
-  margin: 65px 30px;
-  padding: 40px 40px;
+  margin: 65px 130px;
+  padding: 40px 50px;
 }
 
 .coding-resources-section h2 {
