@@ -7,17 +7,59 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
-    /* background-color: #000; */
+    background-color: #1B1B1B;
     
-    background: linear-gradient(40deg, blue, purple, lime);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    /* background: linear-gradient(40deg, lime, rgba(150, 150, 150, 0), #000);
+    background-size: 250% 400%;
+    animation: gradientAnimation 15s ease infinite; */
+    
 }
+
+/*    NAV BAR   */
+nav {
+  background-color: transparent;
+  height: 50px;
+  padding: 20px 0px;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: lime;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: 0.6s;
+  font-family: 'VT323', monospace;
+}
+
+nav a:hover {
+  background-color: lime;
+  transform: scale(1.1);
+  color: #000;
+}
+
 
 .logo-img {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-left: 170px;
 }
 
 .logo-img p{
@@ -65,21 +107,24 @@ body {
     background-color: #111111;
     border-radius: 20px;
     margin: 65px 130px;
-
+    gap: 55px;
+    box-shadow: 4px 6px 8px #100C08;
 }
 
 .hero-section span {
-    font-size: 40px;
+    font-size: 60px;
     color: lime;
     font-weight: bold;
+    font-family: 'VT323', monospace;
+    /* font-stretch: ultra-condensed; */
 }
 
 .hero-section .left-section {
-    box-shadow: 2px 4px 8px lime;
+    box-shadow: 2px 8px 16px #100C08;
     padding: 20px 20px;
     border-radius: 15px;
     height: 550px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .banner {
@@ -154,9 +199,15 @@ body {
   .coding-resources-list li img, .logo-img img{
     animation: moveUpDown 2s infinite;
   }
+/*  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
   
 
-/* .footer-container {
+ .footer-container {
     color: lime;
     background-color: #111111;
     padding: 10px 10px;
@@ -175,6 +226,7 @@ body {
   border-radius: 20px;
   margin: 65px 130px;
   padding: 65px 50px;
+  box-shadow: 4px 6px 8px #100C08;
 }
 
 .coding-resources-section h2 {
@@ -188,7 +240,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  gap: 50px;
   padding: 0;
   margin-top: 20px;
 }
@@ -238,6 +290,7 @@ body {
     padding: 40px 40px;
     border-radius: 20px;
     margin: 65px 30px;
+    box-shadow: 4px 6px 8px #100C08;
 }
 
 .product-section h2 {
@@ -305,6 +358,8 @@ body {
 footer {
     background-color: #464646;
     padding: 20px;
+    border: 2px solid #0056b3;
+    border-radius: 10px;
 }
   
 .footer-container {
@@ -340,13 +395,14 @@ footer {
     margin: 0 10px;
     transition: color 0.3s ease;
 }
-
-.footer-container .social-media-links .teleG {
-    rotate: -40deg;
-}  
+  
 .footer-container .social-media-links a:hover {
     color: lime;
     transform: scale(1.1);
+}
+
+.footer-container .social-media-links .teleG {
+  rotate: -40deg;
 }
   
 .footer-container .signature {
@@ -384,3 +440,54 @@ footer {
     background-color: #000;
   }
   
+
+/*------------MEDIA 768px */
+
+@media (max-width: 1300px) {
+    .hero-section {
+      grid-template-columns: 1fr;
+      padding: 40px;
+      margin: 65px 20px;
+  }
+
+  .hero-section .left-section,
+  .hero-section .right-section {
+      height: auto;
+      padding: 20px;
+      margin-bottom: 30px;
+  }
+
+  .hero-section span {
+      font-size: 40px;
+  }
+
+  .product-section {
+      padding: 40px;
+      margin: 65px 20px;
+  }
+
+  .product-section h2 {
+      font-size: 60px;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .product-item img {
+      max-height: 150px;
+  }
+
+  .coding-resources-section {
+      padding: 40px;
+      margin: 65px 20px;
+  }
+
+  .coding-resources-section h2 {
+      font-size: 50px;
+  }
+
+  .coding-resources-list li img {
+      max-height: 100px;
+  }
+}
