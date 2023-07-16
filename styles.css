@@ -487,6 +487,10 @@ footer {
       font-size: 50px;
   }
 
+  .coding-resources-list li a {
+    font-size: 10px;
+  }
+    
   .coding-resources-list li img {
       max-height: 100px;
   }
