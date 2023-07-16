@@ -340,7 +340,10 @@ footer {
     margin: 0 10px;
     transition: color 0.3s ease;
 }
-  
+
+.footer-container .social-media-links .teleG {
+    rotate: -40deg;
+}  
 .footer-container .social-media-links a:hover {
     color: lime;
     transform: scale(1.1);
